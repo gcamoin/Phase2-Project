@@ -1,0 +1,28 @@
+{
+    "foods": [
+      {
+        "deliverytime": 30,
+        "name": "Cheeseburger",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9lOXTNdcFwVoh1Xved9qMJWwYXHXjldNTrGRDbZAvA3Jg8T3c1CShyxSoXaDNFR4wFVY&usqp=CAU",
+        "price": 8
+      },
+      {
+        "deliverytime": 25,
+        "name": "Pizza",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Ay8KWhS40Mf9a2m6mab4c6gcGfGOIzd0LA&usqp=CAU",
+        "price": 5
+      },
+      {
+        "deliverytime": 35,
+        "name": "Southwest Salad",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZGjQLG9tLhNS8UvcHrfHP5iWfPDAgawAfw&usqp=CAU",
+        "price": 7
+      },
+      {
+        "deliverytime": 22,
+        "name": "Tomato Soup",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVOP_YxnTqVyQKg4B_lVv7uGZh7Qv573l6fSNMEcFcE36YGVdmY77gQxe9w4-Ph5h41Fc&usqp=CAU",
+        "price": 4
+      }
+    ]
+  }
