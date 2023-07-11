@@ -1,7 +1,7 @@
 import React, {useEffect, useState } from "react";
 import FoodContainer from "/home/gcamoin/Phase2-Project/my-app/src/components/FoodContainer.js"
 import Header from "/home/gcamoin/Phase2-Project/my-app/src/components/Header.js"
-
+// import Search from "/home/gcamoin/Phase2-Project/my-app/src/components/Search.js"
 
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
     <div className='app'>
     <Header />
     <FoodContainer foods={foods} />
+    
    
     </div>
   )
