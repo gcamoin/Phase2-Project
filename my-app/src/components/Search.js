@@ -3,7 +3,7 @@ import React from "react"
 function Search({searchInput}) {
     return (
         <div className="searchbar">
-            <label htmlFor="search">Find Food</label>
+            <button htmlFor="search">Find Food</button>
             <input
                 value={searchInput}
                 type="text"

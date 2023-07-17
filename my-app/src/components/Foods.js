@@ -1,16 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 function Foods({food}) {
     const {deliverytime, name, image, price} = food
 
 return (
+    
     <div className="food">
-        {<img src={image} alt={name} />}
         <h1 className="food-details">
-            {name} - ${price}
+            {name} 
             
         </h1>
-        <p>{deliverytime} minutes</p>
+        {<img src={image} alt={name} />}
+        
+        <p>Delivery Time: {deliverytime} minutes</p>
+        <button>Add To Cart </button>
     </div>
 )
 
@@ -18,4 +21,4 @@ return (
 
 }
 
-export default Foods
+export default Foods;
