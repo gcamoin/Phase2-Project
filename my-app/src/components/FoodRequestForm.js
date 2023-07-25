@@ -1,28 +1,38 @@
 import React, { useState } from "react";
 
-function FoodRequestForm({onFoodSubmit}) {
-    const [foodName, setFoodName] = useState("")
-    const [foodImage, setFoodImage] = useState("")
+function FoodRequestForm({onAddFood}) {
+    const [formData, setFormData] = useState({
+        name: "",
+        image: "",
+        deliverytime: Math.floor(Math.random() * 70),
+        price: Math.floor(Math.random() * 15)
+    });
+
+    function handleChange(e) {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        })
+    }
+    
+    
 
     function handleFoodSubmit(e) {
         e.preventDefault();
 
-        const food = {
-            foodName: foodName, 
-            image: foodImage
-        };
+       
 
         fetch("http://localhost:3000/foods", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(food),
+            body: JSON.stringify(formData)
         })
                 .then((res) => res.json())
-                .then((data) => {
-                    onFoodSubmit(data)
-                })
+                .then(onAddFood)
+                    
+                
     }
 
     return (
@@ -30,18 +40,18 @@ function FoodRequestForm({onFoodSubmit}) {
           <h2>Food Request</h2>
           <form onSubmit={handleFoodSubmit}>
             <input
-              onChange={(e) => setFoodName(e.target.value)}
+              onChange={handleChange}
               type="text"
               name="name"
               placeholder="Food Name"
-              value={foodName}
+              value={formData.name}
             />
             <input
-              onChange={(e) => setFoodImage(e.target.value)}
+              onChange={handleChange}
               type="text"
               name="image"
               placeholder="Image URL"
-              value={foodImage}
+              value={formData.image}
             />
            
             <button type="submit">Request Food</button>
