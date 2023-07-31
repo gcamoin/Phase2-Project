@@ -2,6 +2,7 @@ import React, {useEffect, useState } from "react";
 import FoodContainer from "/home/gcamoin/Phase2-Project/my-app/src/components/FoodContainer.js"
 import Header from "/home/gcamoin/Phase2-Project/my-app/src/components/Header.js"
 import FoodRequestForm from "/home/gcamoin/Phase2-Project/my-app/src/components/FoodRequestForm.js"
+import NavBar from "/home/gcamoin/Phase2-Project/my-app/src/components/NavBar.js"
 
 
 
@@ -9,8 +10,6 @@ import FoodRequestForm from "/home/gcamoin/Phase2-Project/my-app/src/components/
 function App() {
 
   const [foods, setFoods] = useState([])
-  const [searchInput, setSearchInput] = useState("")
- 
   
 
   useEffect(() => {
@@ -25,13 +24,7 @@ function App() {
         })      
   }, []);
 
-  // const searchResults = foods.filter((food) => {
-  //   if (searchInput === "") return true
-
-  //   return food.name
-
- 
-  // })
+  
 
     function handleAddFood(newFood) {
       setFoods([...foods, newFood])
@@ -56,18 +49,25 @@ function App() {
 
   return(
     <div className='app'>
-    <Header
-      searchInput={searchInput}
-      setSearchInput={setSearchInput}
-    />
+    <Header />
+    <NavBar />
+
     <FoodRequestForm  onAddFood={handleAddFood}/>
     <FoodContainer 
-      // searchResults={searchResults}
+      
       onDeleteFood={handleDeleteFood}
       foods={foods}
       onUpdateFood={handleUpdateFood}
     
     />
+{/* 
+    <BrowserRouter>
+      <Routes>
+        <Route path="/home/gcamoin/Phase2-Project/my-app/src/components/About.js" element={<About />} />
+      </Routes>
+    </BrowserRouter> */}
+    
+    
     
    
     </div>

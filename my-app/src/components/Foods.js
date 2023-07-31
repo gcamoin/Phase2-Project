@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 
 function Foods({ onDeleteFood, food, onUpdateFood}) {
     const {id, name, image, deliverytime, price, likes} = food;
+    const [textState, setTextState] = useState("Add To Cart");
    
     function handleDeleteFood() {
         fetch(`http://localhost:3000/foods/${id}`, {
@@ -29,6 +30,10 @@ function Foods({ onDeleteFood, food, onUpdateFood}) {
                 .then(onUpdateFood)
     }
 
+    const toggleText = () => {
+        setTextState((state) => (state === "Add To Cart" ? "Remove From Cart" : "Add To Cart"))
+    }
+
 return (
     
     <div className="food">
@@ -40,7 +45,7 @@ return (
         <button className= 'like-btn' onClick={handleLikeClick}>Like {likes}</button>
         
         <p>Delivery Time: {deliverytime} minutes</p>
-        <button><label>${price}</label> - Add To Cart</button>
+        <button onClick={toggleText}><label>${price}</label>-  {textState}</button>
         <button className= 'delete-btn' onClick={handleDeleteFood}> Remove From Menu</button>
     </div>
 )
