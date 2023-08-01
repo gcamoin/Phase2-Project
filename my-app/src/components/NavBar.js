@@ -6,7 +6,8 @@ import {Link} from "react-router-dom"
             <nav className="nav">
                 <Link to="/">Menu</Link><br />
                 <Link to="/requestfood">Request Food</Link><br />
-                <Link to="/about">About</Link>
+                <Link to="/about">About</Link><br />
+                <Link to="/contact">Contact</Link>
             
             </nav>
         )

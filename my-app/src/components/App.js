@@ -5,6 +5,7 @@ import FoodRequestForm from "/home/gcamoin/Phase2-Project/my-app/src/components/
 import NavBar from "/home/gcamoin/Phase2-Project/my-app/src/components/NavBar.js"
 import {Route, Routes} from "react-router-dom"
 import About from "/home/gcamoin/Phase2-Project/my-app/src/components/About.js"
+import Contact from "/home/gcamoin/Phase2-Project/my-app/src/components/Contact.js"
 
 
 
@@ -58,6 +59,7 @@ function App() {
       <Route path="/about" element={<About />}/>
       <Route path="/" element={<FoodContainer foods={foods} onDeleteFood={handleDeleteFood} onUpdateFood={handleUpdateFood} />}/>
       <Route path="/requestfood" element={<FoodRequestForm  onAddFood={handleAddFood}/>} />
+      <Route path="/contact" element={<Contact />}/>
     </Routes>
 
   
