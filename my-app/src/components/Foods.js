@@ -37,7 +37,7 @@ function Foods({ onDeleteFood, food, onUpdateFood}) {
 return (
     
     <div className="food">
-        <h1 className="food-details">
+        <h1 className="food-details" style={{fontFamily: "cursive"}}>
             {name} 
             
         </h1>
