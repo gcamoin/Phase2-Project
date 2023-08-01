@@ -1,8 +1,8 @@
 import React from "react"
 
-    function About() {
+    const About = () => {
         return (
-            <div className="AboutDiv">
+            <div className="About">
                 <h1>ABOUT</h1>
                 <p>
                     EATS EXPRESS is a user firendly food delivery app that allows customers

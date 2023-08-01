@@ -3,6 +3,8 @@ import FoodContainer from "/home/gcamoin/Phase2-Project/my-app/src/components/Fo
 import Header from "/home/gcamoin/Phase2-Project/my-app/src/components/Header.js"
 import FoodRequestForm from "/home/gcamoin/Phase2-Project/my-app/src/components/FoodRequestForm.js"
 import NavBar from "/home/gcamoin/Phase2-Project/my-app/src/components/NavBar.js"
+import {Route, Routes} from "react-router-dom"
+import About from "/home/gcamoin/Phase2-Project/my-app/src/components/About.js"
 
 
 
@@ -47,25 +49,19 @@ function App() {
     
   
 
-  return(
+  return (
     <div className='app'>
     <Header />
     <NavBar />
-
-    <FoodRequestForm  onAddFood={handleAddFood}/>
-    <FoodContainer 
-      
-      onDeleteFood={handleDeleteFood}
-      foods={foods}
-      onUpdateFood={handleUpdateFood}
     
-    />
-{/* 
-    <BrowserRouter>
-      <Routes>
-        <Route path="/home/gcamoin/Phase2-Project/my-app/src/components/About.js" element={<About />} />
-      </Routes>
-    </BrowserRouter> */}
+    <Routes>
+      <Route path="/about" element={<About />}/>
+      <Route path="/" element={<FoodContainer foods={foods} onDeleteFood={handleDeleteFood} onUpdateFood={handleUpdateFood} />}/>
+      <Route path="/requestfood" element={<FoodRequestForm  onAddFood={handleAddFood}/>} />
+    </Routes>
+
+  
+
     
     
     
