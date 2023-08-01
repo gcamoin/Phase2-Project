@@ -41,7 +41,7 @@ return (
             {name} 
             
         </h1>
-        {<img src={image} alt={name} />}
+        {<img src={image} alt={name}  />}
         <button className= 'like-btn' onClick={handleLikeClick}>Like {likes}</button>
         
         <p>Delivery Time: {deliverytime} minutes</p>

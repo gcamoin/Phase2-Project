@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 
     const NavBar = () => {
         return (
-            <nav className="nav">
+            <nav className="nav" style={{textAlign:"right"}}>
                 <Link to="/">Menu</Link><br />
                 <Link to="/requestfood">Request Food</Link><br />
                 <Link to="/about">About</Link><br />
