@@ -16,7 +16,7 @@ function FoodContainer({ onDeleteFood, onUpdateFood, foods}) {
 
    return (
     <div className="plate" style={{backgroundColor: "lightblue"}}>
-        <h3>MENU</h3>
+        <h3 className='menu'>MENU</h3>
         {foodComponents}
 
     </div>

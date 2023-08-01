@@ -43,3 +43,24 @@
   margin-right: auto;
   width: 50%;
 }
+
+.images {
+  width: 60%;
+  height: 80%;
+}
+
+.menu {
+  text-align: center;
+  font-size:400%;
+  text-decoration: underline;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration-color: darkorange;
+  
+}
+
+.nav {
+  margin-left: 7%;
+  font-size: larger;
+  display:inline-flexbox;
+  
+}
