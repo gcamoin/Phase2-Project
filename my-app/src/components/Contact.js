@@ -4,17 +4,19 @@ const Contact = () => {
     return (
         <div className="contact-form">
             <h1>Contact</h1>
-            <form>
+                <form>
                 <input 
                     type="text"
                     name="Comment"
                     placeholder="Add Comment/Feedback"
                 
                 />
-            </form>
-            <p>
+                    <button>Submit</button>
+
+                </form>
+                <p>
                 Email- gcamoin5@gmail.com
-            </p>
+                </p>
 
         </div>
     )
