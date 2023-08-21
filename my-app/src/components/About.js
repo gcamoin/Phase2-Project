@@ -1,6 +1,10 @@
 import React from "react"
+import Form from "/home/gcamoin/Phase2-Project/my-app/src/components/Form.js"
 
-    const About = () => {
+    function About() {
+      
+        
+        
         return (
             <div className="About">
                 <h1>ABOUT</h1>
@@ -16,6 +20,9 @@ import React from "react"
                     food item will then appear on the menu with a price and estimated time for delivery.
             
                 </p>
+
+            <Form />
+                
             </div>
         )
     }

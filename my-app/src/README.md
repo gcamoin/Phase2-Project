@@ -28,6 +28,13 @@ Roadmap/Potenial Changes & Improevments:
 5- Create a dislike button 
 6- Create a cart component so that users can see what they added to their cart
 
+Contributing:
+- Open to suggestions and help with improving the application
+Link to Component Files: https://github.com/gcamoin/Phase2-Project/tree/main/my-app/src/components
+Link to index.js File: https://github.com/gcamoin/Phase2-Project/blob/main/my-app/src/index.js
+Link to App.css: https://github.com/gcamoin/Phase2-Project/blob/main/my-app/src/App.css
+Link to index.html: https://github.com/gcamoin/Phase2-Project/blob/main/my-app/public/index.html
+
 
 Project Status:
 Making improvments and updates in my free time
