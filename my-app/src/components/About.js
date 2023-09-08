@@ -21,8 +21,9 @@ import Form from "/home/gcamoin/Phase2-Project/my-app/src/components/Form.js"
             
                 </p>
 
-            <Form />
+         
                 
+             
             </div>
         )
     }
